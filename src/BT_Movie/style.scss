@@ -1,0 +1,30 @@
+.Seat {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+
+    &:hover {
+        background-color: #fea500;
+    }
+    &.booking {
+        background-color: red;
+        color: white;
+        border: transparent;
+    }
+    &.booked {
+        background-color: gray;
+        color: white;
+        border: transparent;
+        pointer-events: none;
+    }
+
+}
+.disabled{
+  pointer-events: none;
+  .Seat{
+    border: none;
+  }
+}
